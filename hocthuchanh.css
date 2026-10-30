@@ -1,0 +1,58 @@
+/* Bốn trạng thái tương tác của trang web
+/* rê chuột, nhấn giữ chuột, nhấn tab qua menu, nút */
+
+body{
+    font-family: system-ui, sans-serif;
+    line-height: 1.5;
+    padding: 2rem;
+    color: black;
+}
+.menu{
+    display: flex;
+    gap: 2rem;
+    padding: 0;
+    list-style: none;
+}
+.menu a{
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    color: rgb(10, 9, 9);
+}
+.menu a:hover{
+    color:#113494;
+    text-decoration: underline;
+}
+.menu a[aria-current="page"]{
+    color: #113494;
+    font-weight: 600;
+    border-bottom: 3px solid #113494;
+}
+button{
+    padding: 0.5rem 1rem;
+    border: 0;
+    border-radius: 1rem;
+    background-color: #113494;
+    color: aliceblue;
+    font: inherit;
+    cursor: pointer;
+}
+.button:hover:not(:disabled){
+   background: #113494;
+}
+/* con trỏ chuột ở trên*/
+.button:active:not(:disabled){
+    background: #113494;
+    transform:translateY(2px)
+}
+/*Đang nhấn*/
+.button:disabled{
+    background: #cbd5e1;
+   color: #475569;
+   cursor: not-allowed;
+}
+/* Chưa sẵn sàng */
+.menu a:focus-visible,
+.button:focus-visible{
+    outline: 0.25rem solid #113494;
+    outline-offset: 0.25rem;
+}

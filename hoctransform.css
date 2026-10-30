@@ -1,0 +1,33 @@
+body{
+    font-family: system-ui, sans-serif;
+    line-height: 1.5;
+    padding: 2rem;
+    color: black;
+}
+.luoi{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+    max-width: 60%;
+}
+.card{
+  border: 1px solid #d6ddd6;
+  border-radius: 0.5rem;
+  padding: 40px 12px 12px ;
+  background: #d6ddd6;
+}
+.duoi{
+background: #d6ddd6;
+padding: 0.25rem 0.5rem;
+max-width: 60%;
+}
+button{
+    padding: 0.5rem 0.75rem;
+    border: 0 ;
+    border-radius: 8px;
+    background-color: #d6ddd6;
+    font: inherit;
+}
+.card:hover{
+    transform: translateY(10px);
+}
